@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Movies | Netflix Static Project</title>
+  <meta name="description" content="Browse static catalog of Netflix style movies and TV shows for college project.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/movie-details.css">
+  <style>
+    .browse-filter-bar {
+      padding: 7rem 4% 1.5rem 4%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .filter-tags {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .filter-chip {
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--glass-border);
+      color: #e5e5e5;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    .filter-chip:hover, .filter-chip.active {
+      background: var(--netflix-red);
+      color: #fff;
+      border-color: var(--netflix-red);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="netflix-header">
+    <div class="brand-container">
+      <a href="index.html" class="logo-text">NETFLIX</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="browse.html" class="nav-link active">TV Shows</a></li>
+          <li><a href="browse.html" class="nav-link">Movies</a></li>
+          <li><a href="browse.html" class="nav-link">New & Popular</a></li>
+          <li><a href="movie-details.html" class="nav-link">Details View</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-actions">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input type="text" class="search-input" placeholder="Search by genre...">
+      </div>
+      <div class="user-profile">
+        <div class="profile-avatar">CS</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter Controls -->
+  <div class="browse-filter-bar">
+    <h1 style="font-size: 2rem; font-weight: 800;">Browse TV Shows & Movies</h1>
+    <div class="filter-tags">
+      <span class="filter-chip active">All Genres</span>
+      <span class="filter-chip">Sci-Fi</span>
+      <span class="filter-chip">Action</span>
+      <span class="filter-chip">Drama</span>
+      <span class="filter-chip">Horror</span>
+      <span class="filter-chip">Thriller</span>
+      <span class="filter-chip">Top Rated</span>
+    </div>
+  </div>
+
+  <!-- Browse Grid Gallery -->
+  <section class="section-container" style="padding-top: 1rem;">
+    <div class="movies-grid">
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/hero_backdrop_1787851182239.png" alt="Stranger Things" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">STRANGER THINGS</div>
+          <div class="card-meta">
+            <span class="badge-match">98% Match</span>
+            <span class="badge badge-outline">16+</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/movie_poster1_1787851215208.png" alt="Dark" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">DARK</div>
+          <div class="card-meta">
+            <span class="badge-match">99% Match</span>
+            <span class="badge badge-outline">18+</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/movie_poster2_1787851237923.png" alt="Cyberpunk" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">CYBERPUNK 2077</div>
+          <div class="card-meta">
+            <span class="badge-match">96% Match</span>
+            <span class="badge badge-outline">16+</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/movie_poster3_1787851263203.png" alt="Interstellar" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">INTERSTELLAR</div>
+          <div class="card-meta">
+            <span class="badge-match">97% Match</span>
+            <span class="badge badge-outline">13+</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Netflix Footer -->
+  <footer class="netflix-footer">
+    <div class="footer-socials">
+      <span>🌐</span> <span>🎬</span> <span>🍿</span>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <p class="copyright-text">© 2026 Netflix Static Movie Details - College Project UI</p>
+  </footer>
+
+</body>
+</html>

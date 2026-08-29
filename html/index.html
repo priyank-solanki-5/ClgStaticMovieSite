@@ -1,37 +1,207 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix | Home Static College Project</title>
+  <meta name="description"
+    content="Static Netflix-inspired home page showcasing featured movies and dynamic cards built with pure HTML and CSS.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/movie-details.css">
 </head>
 
 <body>
-    <link href="./home.html">
+
+  <!-- Modular Header -->
+  <header class="netflix-header">
+    <div class="brand-container">
+      <a href="index.html" class="logo-text">MOVIEDEAS</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="browse.html" class="nav-link">TV Shows</a></li>
+          <li><a href="browse.html" class="nav-link">Movies</a></li>
+          <li><a href="browse.html" class="nav-link">New & Popular</a></li>
+          <li><a href="movie-details.html" class="nav-link">Details View</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-actions">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24">
+          <path
+            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+        </svg>
+        <input type="text" class="search-input" placeholder="Search movies...">
+      </div>
+      <div class="user-profile">
+        <div class="profile-avatar">CS</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Spotlight Banner -->
+  <div class="hero-details-container" style="background-image: url('img/hero_backdrop_1787851182239.png');">
+    <div class="hero-overlay-vignette"></div>
+    <div class="hero-content">
+      <div class="movie-badge-group">
+        <span class="badge badge-red">FEATURED SHOW</span>
+        <span class="badge badge-outline">TRENDING #1</span>
+      </div>
+
+      <h1 class="movie-title-large">STRANGER THINGS</h1>
+
+      <div class="meta-stats-row">
+        <span class="badge-match">98% Match</span>
+        <span>2024</span>
+        <span class="badge badge-outline">16+</span>
+        <span>4 Seasons</span>
+      </div>
+
+      <p class="movie-synopsis">
+        Uncover dark secrets, mysterious laboratories, and parallel dimensions in Hawkins, Indiana. Click "More Details"
+        to view full episodes, cast, and trailers.
+      </p>
+
+      <div class="action-buttons-group">
+        <a href="movie-details.html" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg> Watch Now
+        </a>
+        <a href="movie-details.html" class="btn btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+          </svg> More Details
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Trending Rails -->
+  <section class="section-container">
+    <h2 class="section-title">Trending Now</h2>
+    <div class="movies-grid">
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/movie_poster1_1787851215208.png" alt="Movie 1" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">DARK: TIME LOOPS</div>
+          <div class="card-meta">
+            <span class="badge-match">99% Match</span>
+            <span class="badge badge-outline">18+</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/movie_poster2_1787851237923.png" alt="Movie 2" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">CYBERPUNK EDGERUNNERS</div>
+          <div class="card-meta">
+            <span class="badge-match">96% Match</span>
+            <span class="badge badge-outline">16+</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/movie_poster3_1787851263203.png" alt="Movie 3" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">INTERSTELLAR SPACE</div>
+          <div class="card-meta">
+            <span class="badge-match">97% Match</span>
+            <span class="badge badge-outline">13+</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/hero_backdrop_1787851182239.png" alt="Movie 4" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">STRANGER THINGS S4</div>
+          <div class="card-meta">
+            <span class="badge-match">98% Match</span>
+            <span class="badge badge-outline">16+</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Popular Movies Section -->
+  <section class="section-container" style="padding-top: 0;">
+    <h2 class="section-title">Popular Shows</h2>
+    <div class="movies-grid">
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/movie_poster3_1787851263203.png" alt="Movie 5" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">THE COSMIC CRISIS</div>
+          <div class="card-meta">
+            <span class="badge-match">95% Match</span>
+            <span class="badge badge-outline">4K</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/movie_poster1_1787851215208.png" alt="Movie 6" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">THE WITCHER CHRONICLES</div>
+          <div class="card-meta">
+            <span class="badge-match">93% Match</span>
+            <span class="badge badge-outline">HDR</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/hero_backdrop_1787851182239.png" alt="Movie 7" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">HAWKINS MYSTERIES</div>
+          <div class="card-meta">
+            <span class="badge-match">97% Match</span>
+            <span class="badge badge-outline">5.1</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="movie-details.html" class="movie-card">
+        <img src="img/movie_poster2_1787851237923.png" alt="Movie 8" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">NEON NIGHTS 2077</div>
+          <div class="card-meta">
+            <span class="badge-match">91% Match</span>
+            <span class="badge badge-outline">18+</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Netflix Footer -->
+  <footer class="netflix-footer">
+    <div class="footer-socials">
+      <span>🌐</span> <span>🎬</span> <span>🍿</span>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#">Audio Description</a></li>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Gift Cards</a></li>
+      <li><a href="#">Media Center</a></li>
+      <li><a href="#">Investor Relations</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal Notices</a></li>
+      <li><a href="#">Cookie Preferences</a></li>
+      <li><a href="#">College Project Info</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <p class="copyright-text">© 2026 Netflix Static Movie Details - College Project UI</p>
+  </footer>
+
 </body>
 
 </html>
-
-
-
-
-
-
-<!-- <!doctype html>
-<html>
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-    </style>
-</head>
-
-<body>
-</body>
-
-</html> -->

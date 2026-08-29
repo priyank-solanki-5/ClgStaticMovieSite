@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stranger Things | Netflix Details College Project</title>
+  <meta name="description" content="Static Netflix-inspired movie details web page built with HTML5 and CSS3 for college project.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/movie-details.css">
+</head>
+<body>
+
+  <!-- Modular Netflix Header -->
+  <header class="netflix-header">
+    <div class="brand-container">
+      <a href="index.html" class="logo-text">NETFLIX</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="browse.html" class="nav-link">TV Shows</a></li>
+          <li><a href="browse.html" class="nav-link">Movies</a></li>
+          <li><a href="browse.html" class="nav-link">New & Popular</a></li>
+          <li><a href="movie-details.html" class="nav-link active">Details View</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-actions">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input type="text" class="search-input" placeholder="Titles, cast, genres...">
+      </div>
+      <div class="user-profile" title="College Student Profile">
+        <div class="profile-avatar">CS</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Details Backdrop Container -->
+  <div class="hero-details-container" style="background-image: url('img/hero_backdrop_1787851182239.png');">
+    <div class="hero-overlay-vignette"></div>
+    <div class="hero-content">
+      <div class="movie-badge-group">
+        <span class="badge badge-red">NETFLIX ORIGINAL</span>
+        <span class="badge badge-outline">SERIES</span>
+        <span class="badge badge-outline">TOP #1 TODAY</span>
+      </div>
+
+      <h1 class="movie-title-large">STRANGER THINGS</h1>
+
+      <div class="meta-stats-row">
+        <span class="badge-match">98% Match</span>
+        <span>2024</span>
+        <span class="badge badge-outline">16+</span>
+        <span>4 Seasons</span>
+        <span class="badge badge-outline">ULTRA HD 4K</span>
+        <span class="badge badge-outline">5.1 SOUND</span>
+      </div>
+
+      <p class="movie-synopsis">
+        When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl with telekinetic powers.
+      </p>
+
+      <div class="action-buttons-group">
+        <a href="#trailer" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Play S4 E1
+        </a>
+        <button class="btn btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> My List
+        </button>
+        <button class="btn btn-secondary" style="padding: 0.75rem 1rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.58 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Grid Layout -->
+  <main class="movie-main-grid">
+    <!-- Left Column: Storyline & Cast -->
+    <div>
+      <section class="cast-section">
+        <h2 class="section-title">
+          <svg width="24" height="24" fill="var(--netflix-red)" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          Cast & Starring
+        </h2>
+        <div class="cast-grid">
+          <div class="cast-card">
+            <img src="img/movie_poster1_1787851215208.png" alt="Millie Bobby Brown" class="cast-avatar">
+            <div class="cast-name">Millie B. Brown</div>
+            <div class="cast-role">as Eleven</div>
+          </div>
+          <div class="cast-card">
+            <img src="img/movie_poster2_1787851237923.png" alt="Finn Wolfhard" class="cast-avatar">
+            <div class="cast-name">Finn Wolfhard</div>
+            <div class="cast-role">as Mike Wheeler</div>
+          </div>
+          <div class="cast-card">
+            <img src="img/movie_poster3_1787851263203.png" alt="David Harbour" class="cast-avatar">
+            <div class="cast-name">David Harbour</div>
+            <div class="cast-role">as Jim Hopper</div>
+          </div>
+          <div class="cast-card">
+            <img src="img/hero_backdrop_1787851182239.png" alt="Winona Ryder" class="cast-avatar">
+            <div class="cast-name">Winona Ryder</div>
+            <div class="cast-role">as Joyce Byers</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Right Sidebar: Metadata Summary -->
+    <aside>
+      <div class="sidebar-info-card">
+        <div class="info-item">
+          <span class="info-label">Creators</span>
+          <span class="info-value">The Duffer Brothers</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Genres</span>
+          <span class="info-value">Sci-Fi TV, Horror Movies, Teen Drama, 80s Nostalgia</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">This Show Is</span>
+          <span class="info-value">Chilling, Mind-Bending, Ominous, Thrilling</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Audio & Subtitles</span>
+          <span class="info-value">English [Original], Spanish, Hindi, French, German</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Maturity Rating</span>
+          <span class="info-value"><span class="badge badge-outline">16+</span> Suitable for ages 16 and older (Violence, Fear, Language)</span>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Seasons & Episodes Section -->
+  <section class="episodes-container">
+    <div class="tab-header">
+      <div class="tab-title-group">
+        <button class="tab-btn active">Episodes</button>
+        <button class="tab-btn">Trailers & More</button>
+        <button class="tab-btn">More Like This</button>
+      </div>
+      <select class="season-select">
+        <option>Season 4 (9 Episodes)</option>
+        <option>Season 3 (8 Episodes)</option>
+        <option>Season 2 (9 Episodes)</option>
+        <option>Season 1 (8 Episodes)</option>
+      </select>
+    </div>
+
+    <div class="episodes-list">
+      <!-- Episode 1 -->
+      <article class="episode-item">
+        <div class="ep-num">1</div>
+        <div class="ep-thumb-container">
+          <img src="img/hero_backdrop_1787851182239.png" alt="Episode 1 Thumbnail" class="ep-thumb">
+          <div class="ep-play-overlay">
+            <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <div class="ep-details">
+          <div class="ep-title-row">
+            <h3 class="ep-title">Chapter One: The Hellfire Club</h3>
+            <span class="ep-duration">76m</span>
+          </div>
+          <p class="ep-desc">El struggles to fit in at high school in California. Back in Hawkins, a new D&D campaign launches, but a dark presence begins terrorizing the town.</p>
+        </div>
+      </article>
+
+      <!-- Episode 2 -->
+      <article class="episode-item">
+        <div class="ep-num">2</div>
+        <div class="ep-thumb-container">
+          <img src="img/movie_poster1_1787851215208.png" alt="Episode 2 Thumbnail" class="ep-thumb">
+          <div class="ep-play-overlay">
+            <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <div class="ep-details">
+          <div class="ep-title-row">
+            <h3 class="ep-title">Chapter Two: Vecna's Curse</h3>
+            <span class="ep-duration">77m</span>
+          </div>
+          <p class="ep-desc">A plane brings Mike to California, and a body brings Hawkins to a standstill. Nancy starts asking questions while Eleven seeks answers about her powers.</p>
+        </div>
+      </article>
+
+      <!-- Episode 3 -->
+      <article class="episode-item">
+        <div class="ep-num">3</div>
+        <div class="ep-thumb-container">
+          <img src="img/movie_poster2_1787851237923.png" alt="Episode 3 Thumbnail" class="ep-thumb">
+          <div class="ep-play-overlay">
+            <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <div class="ep-details">
+          <div class="ep-title-row">
+            <h3 class="ep-title">Chapter Three: The Monster and the Superhero</h3>
+            <span class="ep-duration">63m</span>
+          </div>
+          <p class="ep-desc">Murray and Joyce fly to Alaska. Eleven faces severe consequences at school. Dustin investigates a mysterious clue connecting the upside down.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Trailer Section UI -->
+  <section class="trailer-section" id="trailer">
+    <h2 class="section-title">
+      <svg width="24" height="24" fill="var(--netflix-red)" viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H9l2 4H8L6 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+      Official Teaser & Trailers
+    </h2>
+    <div class="trailer-preview-card">
+      <img src="img/hero_backdrop_1787851182239.png" alt="Trailer Preview" class="trailer-thumbnail">
+      <div class="trailer-overlay">
+        <div class="play-circle-btn" title="Click to preview trailer">
+          <svg width="32" height="32" fill="#fff" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div style="font-weight: 700; font-size: 1.2rem; text-shadow: 0 2px 10px #000;">Watch Stranger Things 4 Official Trailer</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Like This Grid -->
+  <section class="section-container">
+    <h2 class="section-title">More Like This</h2>
+    <div class="movies-grid">
+      <article class="movie-card">
+        <img src="img/movie_poster1_1787851215208.png" alt="Dark" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">DARK</div>
+          <div class="card-meta">
+            <span class="badge-match">99% Match</span>
+            <span class="badge badge-outline">18+</span>
+            <span>3 Seasons</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card">
+        <img src="img/movie_poster2_1787851237923.png" alt="Cyberpunk" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">CYBERPUNK 2077</div>
+          <div class="card-meta">
+            <span class="badge-match">96% Match</span>
+            <span class="badge badge-outline">16+</span>
+            <span>1 Season</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card">
+        <img src="img/movie_poster3_1787851263203.png" alt="Interstellar" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">INTERSTELLAR</div>
+          <div class="card-meta">
+            <span class="badge-match">97% Match</span>
+            <span class="badge badge-outline">13+</span>
+            <span>2h 49m</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card">
+        <img src="img/hero_backdrop_1787851182239.png" alt="The Witcher" class="card-poster">
+        <div class="card-overlay">
+          <div class="card-title">THE WITCHER</div>
+          <div class="card-meta">
+            <span class="badge-match">94% Match</span>
+            <span class="badge badge-outline">18+</span>
+            <span>3 Seasons</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Netflix Footer -->
+  <footer class="netflix-footer">
+    <div class="footer-socials">
+      <span>🌐</span> <span>🎬</span> <span>🍿</span>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#">Audio Description</a></li>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Gift Cards</a></li>
+      <li><a href="#">Media Center</a></li>
+      <li><a href="#">Investor Relations</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal Notices</a></li>
+      <li><a href="#">Cookie Preferences</a></li>
+      <li><a href="#">College Project Info</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <p class="copyright-text">© 2026 Netflix Static Movie Details - College Project UI</p>
+  </footer>
+
+</body>
+</html>
